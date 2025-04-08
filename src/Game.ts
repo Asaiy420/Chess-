@@ -7,7 +7,7 @@ export class Game {
   private board: Chess;
   private moves: string[];
   private startTime: Date;
-
+  // constructor to initialize the game with two players and set the initial state of the game
   constructor(player1: WebSocket, player2: WebSocket) {
     this.player1 = player1;
     this.player2 = player2;
@@ -31,7 +31,7 @@ export class Game {
       })
     );
   }
-
+  // function to make the move and send it to the other player
   makeMove(
     socket: WebSocket,
     move: {
