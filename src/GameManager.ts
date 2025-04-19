@@ -18,7 +18,7 @@ export class GameManager {
     this.users.push(socket);
   }
   removeUser(socket: WebSocket) {
-    // stops the game here as the users have disconnected from the game
+    // stops the game here as the users already have disconnected from the game
     this.users = this.users.filter((user) => user !== socket);
     this.addHandler(socket);
   }
