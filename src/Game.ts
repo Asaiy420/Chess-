@@ -22,6 +22,7 @@ export class Game {
         },
       })
     );
+    // send info to 2nd player in json format
     this.player2.send(
       JSON.stringify({
         type: INIT_GAME,
